@@ -1,0 +1,67 @@
+.contenedorPrincipal {
+    /*background-color: black;*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.presentacionEmpresa {
+    /*background-color: aqua;*/
+    text-align: center;
+    width: 90%;
+    margin: 10px;
+}
+
+.datosLibrerias {
+    /*background-color: blue;*/
+    display: flex;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+
+}
+
+.botonDesplazamiento {
+    /*background-color: beige;*/
+    height: 500px;
+    width: 50px;
+    margin: 10px;
+    font-size: xx-large;
+}
+
+.contenedorDatosLibreria {
+    /*background-color: aquamarine;*/
+    height: 400px;
+    width: 550px;
+    margin-left: 5%;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tituloLibreria {
+    height: 10%;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.botonDescargar {
+
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.parrafoLiberia {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.imagenLibreria {
+    margin-left: 100px;
+}
+
+#bder {
+    margin-left: auto;
+}
