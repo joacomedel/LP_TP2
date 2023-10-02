@@ -1,26 +1,29 @@
-#seleccionado {
-    color: white;
+:root {
+    --colorHeader: #91B6C7;
+    --colorLinks: #536872;
+    --colorBackgroundBody: #728F9C;
+    --colorLinkHover: #344147;
+    --colorAll: black;
 }
 
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
-    color: black;
+    color: var(--colorAll);
+    box-sizing: border-box;
 }
 
 body {
     margin: 0px;
-    background-color: gainsboro;
+    background-color: var(--colorBackgroundBody);
 }
 
 header {
-
-    background-color: #61171e;
+    background: var(--colorHeader);
     display: flex;
     height: 50px;
     margin-bottom: 10px;
     position: sticky;
-
 }
 
 header span {
@@ -28,8 +31,8 @@ header span {
     display: flex;
 }
 
-a {
-    color: gray
+header a {
+    color: var(--colorLinks)
 }
 
 .anchorLogo {
@@ -79,5 +82,14 @@ a {
 }
 
 header a:hover {
-    color: rgb(80, 80, 80);
+    transform: scale(1.1);
+    color: var(--colorLinkHover)
+}
+
+#seleccionado {
+    color: white;
+}
+
+#seleccionado:hover {
+    transform: scale(1.001);
 }

@@ -30,9 +30,7 @@
 }
 
 .contenedorDatosLibreria {
-    /*background-color: aquamarine;*/
     height: 400px;
-    width: 550px;
     margin-left: 5%;
     margin-right: 100px;
     display: flex;
@@ -48,20 +46,19 @@
 }
 
 .botonDescargar {
-
     margin-top: 10px;
     margin-bottom: 40px;
+    text-decoration: none;
 }
 
-.parrafoLiberia {
+.parrafoLibreria {
     margin-top: auto;
     margin-bottom: auto;
+    word-wrap: break-word;
 }
 
 .imagenLibreria {
     margin-left: 100px;
 }
 
-#bder {
-    margin-left: auto;
-}
+#bder {}
