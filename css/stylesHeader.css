@@ -77,8 +77,24 @@ header a {
     justify-content: center;
     width: 23%;
     border-radius: 3px;
-    height: 70%;
+    height: 100%;
     text-decoration: none;
+}
+
+.espacioLinks div {
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23%;
+    border-radius: 3px;
+    height: 100%;
+    text-decoration: none;
+}
+
+.espacioLinks div a {
+    height: 100%;
+    width: 100%;
 }
 
 header a:hover {
@@ -91,5 +107,25 @@ header a:hover {
 }
 
 #seleccionado:hover {
-    transform: scale(1.001);
+    transform: scale(1);
+}
+
+.divDescargasHeader {
+    position: relative;
+}
+
+.dropdown {
+    background-color: var(--colorHeader);
+    list-style: none;
+    position: absolute;
+    z-index: 999;
+    padding: 0;
+    top: 98%;
+    width: 100%;
+    margin: 0;
+    display: none;
+}
+
+.divDescargasHeader:hover .dropdown {
+    display: inline-block;
 }
