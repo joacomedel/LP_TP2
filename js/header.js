@@ -1,4 +1,4 @@
-fetch("/json/libreriaDatos.json").then(response => response.json()).then(param => cargarHeader(param));
+fetch("/json/juegos.json").then(response => response.json()).then(param => cargarHeader(param));
 function cargarHeader(arregloLibrerias) {
     const lista = document.querySelector('.divDescargasHeader ul');
     arregloLibrerias.forEach(libreria => {

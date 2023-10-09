@@ -1,4 +1,4 @@
-fetch("/json/libreriaDatos.json").then(response => response.json()).then(arregloLibrerias => cargarDatos(arregloLibrerias));
+fetch("/json/juegos.json").then(response => response.json()).then(arregloLibrerias => cargarDatos(arregloLibrerias));
 
 function cargarDatos(arregloLibrerias) {
     const contenedorDescargas = document.querySelector('.contenedorDescargas');

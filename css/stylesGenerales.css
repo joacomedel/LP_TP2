@@ -1,8 +1,15 @@
-:root {
+/*:root {
     --colorHeader: #91B6C7;
     --colorLinks: #536872;
     --colorBackgroundBody: #728F9C;
     --colorLinkHover: #344147;
+    --colorAll: black;
+}*/
+:root {
+    --colorHeader: #008000;
+    --colorLinks: #FFD700;
+    --colorBackgroundBody: #006400;
+    --colorLinkHover: #F00000;
     --colorAll: black;
 }
 

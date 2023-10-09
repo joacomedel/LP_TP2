@@ -1,64 +1,75 @@
-.contenedorPrincipal {
+.divPrincipal {
     /*background-color: black;*/
+    height: 80%;
+    width: 100%;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .presentacionEmpresa {
     /*background-color: aqua;*/
     text-align: center;
     width: 90%;
-    margin: 10px;
+    margin: 30px;
+    margin-bottom: 50px;
 }
 
-.datosLibrerias {
-    /*background-color: blue;*/
-    display: flex;
-    width: 80%;
-    height: 100%;
-    align-items: center;
 
-}
-
-.botonDesplazamiento {
-    /*background-color: beige;*/
-    height: 500px;
-    width: 50px;
-    margin: 10px;
-    font-size: xx-large;
-}
-
-.contenedorDatosLibreria {
-    height: 400px;
-    margin-left: 5%;
-    margin-right: 100px;
+.divDatosJuego {
     display: flex;
     flex-direction: column;
-
+    width: max-content;
+    margin-left: 5%;
 }
 
-.tituloLibreria {
-    height: 10%;
-    margin: 0px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-
-.botonDescargar {
-    margin-top: 10px;
-    margin-bottom: 40px;
-    text-decoration: none;
-}
-
-.parrafoLibreria {
+.divDatosJuego a {
     margin-top: auto;
-    margin-bottom: auto;
-    word-wrap: break-word;
+    margin-bottom: 10px;
 }
 
-.imagenLibreria {
-    margin-left: 100px;
+.divDatosJuego p {
+    overflow: auto;
 }
 
-#bder {}
+.divDatosJuego p::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+
+.divCarrusel {
+    display: flex;
+    min-height: 190px;
+    width: 90%;
+    max-width: 900px;
+    max-height: 300px;
+    height: 30vw;
+}
+
+.divBoton {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+}
+
+.divImagen {
+    min-width: 190px;
+    min-height: 190px;
+    max-height: 300px;
+    max-width: 300px;
+    height: 100%;
+    width: 200%;
+}
+
+.divImagen img {
+    height: 100%;
+}
+
+.div #der {
+
+    right: 100%;
+}
+
+#izq {
+    left: auto;
+}
