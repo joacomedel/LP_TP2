@@ -1,7 +1,8 @@
 fetch("/json/juegos.json").then(response => response.json()).then(param => cargarHeader(param));
-function cargarHeader(arregloLibrerias) {
-    const lista = document.querySelector('.divDescargasHeader ul');
-    arregloLibrerias.forEach(libreria => {
+
+function cargarHeader(arregloJuegos) {
+    const lista = document.querySelector('.divJuegosHeader ul');
+    arregloJuegos.forEach(libreria => {
         const li = document.createElement("li");
         const a = document.createElement("a");
         lista.appendChild(li);

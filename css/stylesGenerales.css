@@ -33,14 +33,16 @@ header {
     position: sticky;
 }
 
-header span {
+header nav {
     width: 100%;
     display: flex;
 }
 
-header a {
+header a,
+header a>h1 {
     color: var(--colorLinks)
 }
+
 
 .anchorLogo {
     width: 90%;
@@ -117,7 +119,7 @@ header a:hover {
     transform: scale(1);
 }
 
-.divDescargasHeader {
+.divJuegosHeader {
     position: relative;
 }
 
@@ -133,6 +135,6 @@ header a:hover {
     display: none;
 }
 
-.divDescargasHeader:hover .dropdown {
+.divJuegosHeader:hover .dropdown {
     display: inline-block;
 }
