@@ -1,8 +1,10 @@
 fetch("/json/juegos.json").then(response => response.json()).then(param => { postFetch(param) });
+
 function postFetch(param) {
+    //Todo lo q se hace en este js es con datos cargados , asi q esperamos q los obtenga y los cargue
     cargarDatos(param);
-    setTamanios();
-    window.addEventListener('resize', setTamanios);
+    emparejarUltimoDiv();
+    window.addEventListener('resize', emparejarUltimoDiv);
 }
 function cargarDatos(arregloJuegos) {
     const contenedorJuegos = document.querySelector('.contenedorJuegos');
@@ -26,14 +28,18 @@ function cargarDatos(arregloJuegos) {
 
 }
 
-function setTamanios() {
-
+function emparejarUltimoDiv() {
+    /*Soluciona el problema cuando el ultimo div queda con una row entera para el solo se hace demasiado grande
+    seteando el tamaño como el del primer div
+    */
     const primerDiv = document.querySelector('.contenedorJuegos div:first-child');
     const height = primerDiv.clientHeight;
     const width = primerDiv.clientWidth;
     const ultimoDiv = document.querySelector('.contenedorJuegos  div:last-child');
-    console.log(ultimoDiv);
-    ultimoDiv.style.maxWidth = width + "px";
-    ultimoDiv.style.maxHeight = height + "px";
-    console.log("________");
+    if (height != ultimoDiv.clientHeight || width != ultimoDiv.clientWidth) {
+        //Si resulta q el ultimo elemento tiene un tamaño distinto , le setamos el maximo 
+        ultimoDiv.style.maxWidth = width + "px";
+        ultimoDiv.style.maxHeight = height + "px";
+    }
+
 }

@@ -15,61 +15,12 @@
     margin-bottom: 50px;
 }
 
-
-.divDatosJuego {
-    display: flex;
-    flex-direction: column;
-    width: max-content;
-    margin-left: 5%;
-}
-
-.divDatosJuego a {
-    margin-top: auto;
-    margin-bottom: 10px;
-}
-
-.divDatosJuego p {
-    overflow: auto;
-}
-
-.divDatosJuego p::-webkit-scrollbar {
-    width: 0.5em;
-}
-
-
 .divCarrusel {
     display: flex;
+    flex-wrap: wrap;
     min-height: 190px;
     width: 90%;
     max-width: 900px;
     max-height: 300px;
     height: 30vw;
-}
-
-.divBoton {
-    background-color: aqua;
-    display: flex;
-    align-items: center;
-}
-
-.divImagen {
-    min-width: 190px;
-    min-height: 190px;
-    max-height: 300px;
-    max-width: 300px;
-    height: 100%;
-    width: 200%;
-}
-
-.divImagen img {
-    height: 100%;
-}
-
-.div #der {
-
-    right: 100%;
-}
-
-#izq {
-    left: auto;
 }

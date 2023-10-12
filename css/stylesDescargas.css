@@ -16,11 +16,10 @@
     flex: 1;
     min-width: 291.667px;
     min-height: 305.903px;
-    /*max-width: 430px;
-    max-height: 430px;*/
+    max-width: 430px;
+    max-height: 430px;
     margin-top: 20px;
     margin-bottom: 10px;
-    /* 25% para 4 elementos por fila y ajusta el margen */
     text-align: center;
 }
 
