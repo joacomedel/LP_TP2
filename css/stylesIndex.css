@@ -17,10 +17,38 @@
 
 .divCarrusel {
     display: flex;
-    flex-wrap: wrap;
     min-height: 190px;
     width: 90%;
     max-width: 900px;
     max-height: 300px;
     height: 30vw;
+}
+
+.divBoton {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.divImagen {
+    flex: 1;
+    display: flex;
+    /* Para recortar cualquier contenido que se salga del div */
+}
+
+.divImagen img {
+    flex: 1;
+}
+
+.divDatosJuego {
+    flex: 2;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pJuego {
+    flex: 1;
+    overflow: hidden;
 }
