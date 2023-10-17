@@ -30,7 +30,7 @@ function cargarBiblioteca(i) {
     const parrafo = document.querySelector('.pJuego');
     parrafo.textContent = juegosDatos[i].parrafo;
     const link = document.querySelector('.botonDescargar');
-    link.href = "Juegos/" + tituloSinEspacios + ".html";
+    link.href = "Juegos/" + tituloSinEspacios.toLowerCase() + ".html";
 }
 
 function ajustarCuadrado() {

@@ -41,6 +41,7 @@
     object-fit: cover;
     margin-left: 5px;
     border-radius: 15%;
+    border: black solid;
 }
 
 .titJuego {

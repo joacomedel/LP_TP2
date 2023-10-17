@@ -7,10 +7,14 @@
 }*/
 :root {
     --colorHeader: #361515;
-    --colorLinks: #FFD700;
+    --colorLinks: goldenrod;
     --colorBackgroundBody: radial-gradient(#0B0505, #291010);
     --colorLinkHover: #E05858;
     --colorAll: white;
+}
+
+a {
+    text-decoration: none;
 }
 
 * {
