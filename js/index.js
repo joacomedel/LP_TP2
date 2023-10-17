@@ -22,7 +22,7 @@ function moverIndex(i) {
     cargarBiblioteca(indice);
 }
 function cargarBiblioteca(i) {
-    const imagen = document.querySelector('.divImagen img');
+    const imagen = document.querySelector('.divCarrusel img');
     let tituloSinEspacios = juegosDatos[i].titulo.replace(/\s/g, '');
     imagen.src = "/assets/" + tituloSinEspacios + ".png";
     const titulo = document.querySelector('.titJuego');

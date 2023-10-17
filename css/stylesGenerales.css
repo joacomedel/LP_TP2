@@ -6,11 +6,11 @@
     --colorAll: black;
 }*/
 :root {
-    --colorHeader: #008000;
+    --colorHeader: #361515;
     --colorLinks: #FFD700;
-    --colorBackgroundBody: #006400;
-    --colorLinkHover: #F00000;
-    --colorAll: black;
+    --colorBackgroundBody: radial-gradient(#0B0505, #291010);
+    --colorLinkHover: #E05858;
+    --colorAll: white;
 }
 
 * {
@@ -22,7 +22,7 @@
 
 body {
     margin: 0px;
-    background-color: var(--colorBackgroundBody);
+    background: var(--colorBackgroundBody);
 }
 
 header {
@@ -30,11 +30,11 @@ header {
     display: flex;
     height: 50px;
     margin-bottom: 10px;
-    position: sticky;
+    min-width: 95%;
 }
 
 header nav {
-    width: 100%;
+    min-width: 95%;
     display: flex;
 }
 
