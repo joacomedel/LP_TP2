@@ -5,6 +5,7 @@ function postFetch(param) {
     juegosDatos = param
     cargarBiblioteca(indice);
     setearBotones();
+
 }
 function setearBotones() {
     document.querySelector('#bDer').onclick = sumarIndex;
@@ -18,7 +19,6 @@ function restarIndex() {
 }
 function moverIndex(i) {
     indice = (indice + i + juegosDatos.length) % juegosDatos.length;
-    console.log(indice);
     cargarBiblioteca(indice);
 }
 function cargarBiblioteca(i) {
@@ -31,4 +31,12 @@ function cargarBiblioteca(i) {
     parrafo.textContent = juegosDatos[i].parrafo;
     const link = document.querySelector('.botonDescargar');
     link.href = "Juegos/" + tituloSinEspacios + ".html";
+}
+
+function ajustarCuadrado() {
+    const height = document.querySelector(".divImagen").clientHeight;
+    cons
+    document.querySelector(".divImagen img").style.height = height + "px";
+
+
 }

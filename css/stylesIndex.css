@@ -5,6 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .presentacionEmpresa {
@@ -21,7 +22,8 @@
     width: 90%;
     max-width: 900px;
     max-height: 300px;
-    height: 30vw;
+    height: 45vw;
+    align-items: center;
 }
 
 .divBoton {
@@ -32,23 +34,38 @@
 
 .divImagen {
     flex: 1;
-    display: flex;
+    height: 100%;
+    width: min-content;
     /* Para recortar cualquier contenido que se salga del div */
 }
 
 .divImagen img {
-    flex: 1;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+
 }
+
+.titJuego {
+    margin: 0px;
+}
+
+
 
 .divDatosJuego {
     flex: 2;
+    height: 100%;
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
     flex-direction: column;
+    max-width: 400px;
 }
 
 .pJuego {
     flex: 1;
+    display: flex;
+    align-items: center;
     overflow: hidden;
+
 }

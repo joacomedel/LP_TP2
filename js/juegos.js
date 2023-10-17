@@ -8,7 +8,6 @@ function postFetch(param) {
 }
 function cargarDatos(arregloJuegos) {
     const divJuegos = document.querySelector('.divJuegos');
-    console.log(divJuegos);
     divJuegos.stylesHeight = "400px"
     for (let index = 0; index < arregloJuegos.length; index++) {
         const juego = arregloJuegos[index];
