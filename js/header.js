@@ -12,7 +12,7 @@ function cargarHeader(arregloJuegos) {
         li.appendChild(a);
         a.textContent = libreria.titulo;
         const tituloSinEspacios = libreria.titulo.replace(/\s/g, '');
-        a.href = "/html/Juegos/" + tituloSinEspacios + ".html";
+        a.href = "/html/juegos/" + tituloSinEspacios.toLowerCase() + ".html";
     });
 
 }

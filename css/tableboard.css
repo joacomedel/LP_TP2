@@ -1,3 +1,6 @@
+.game div span{
+    font-size: 3vw;
+}
 .tableboard {
     display: grid;
     grid-template-columns: repeat(13, 1fr);
@@ -116,7 +119,6 @@
 .bet.null {
     display: none;
 }
-
 .game {
     margin: 5px;
     display: flex;
@@ -130,6 +132,7 @@
     border-bottom-style: groove;
     border-radius: 10%;
     border-color: goldenrod;
+
 
     box-shadow:
         inset -1vw -1vw 5vw blue,

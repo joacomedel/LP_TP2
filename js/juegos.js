@@ -22,7 +22,7 @@ function cargarDatos(arregloJuegos) {
         const tituloSinEspacios = juego.titulo.replace(/\s/g, '');
         img.src = "/assets/" + tituloSinEspacios + ".png";
         titulo.textContent = juego.titulo;
-        link.href = "Juegos/" + tituloSinEspacios.toLowerCase() + ".html";
+        link.href = "juegos/" + tituloSinEspacios.toLowerCase() + ".html";
     }
 
 }
