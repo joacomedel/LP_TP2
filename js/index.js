@@ -1,5 +1,3 @@
-elem = document.querySelector('body');
-insertComponentFirst('header', elem);
 fetch("/json/juegos.json").then(response => response.json()).then(param => postFetch(param));
 let juegosDatos;
 let indice = 0;
