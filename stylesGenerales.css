@@ -34,7 +34,7 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background-image: url("/assets/fondo.png");
+    background-image: url("./assets/fondo.png");
     opacity: 0.04;
 }
 
