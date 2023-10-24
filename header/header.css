@@ -1,34 +1,3 @@
-/*:root {
-    --colorHeader: #91B6C7;
-    --colorLinks: #536872;
-    --colorBackgroundBody: #728F9C;
-    --colorLinkHover: #344147;
-    --colorAll: black;
-}*/
-:root {
-    --colorHeader: #361515;
-    --colorLinks: goldenrod;
-    --colorBackgroundBody: radial-gradient(#0B0505, #291010);
-    --colorLinkHover: #E05858;
-    --colorAll: white;
-}
-
-a {
-    text-decoration: none;
-}
-
-* {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    color: var(--colorAll);
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0px;
-    background: var(--colorBackgroundBody);
-}
-
 header {
     background: var(--colorHeader);
     display: flex;
