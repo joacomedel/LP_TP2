@@ -1,4 +1,4 @@
-fetch("/json/juegos.json").then(response => response.json()).then(param => { postFetch(param) });
+fetch("../json/juegos.json").then(response => response.json()).then(param => { postFetch(param) });
 
 function postFetch(param) {
     //Todo lo q se hace en este js es con datos cargados , asi q esperamos q los obtenga y los cargue
@@ -8,7 +8,7 @@ function postFetch(param) {
 }
 function cargarDatos(arregloJuegos) {
     const divJuegos = document.querySelector('.divJuegos');
-    divJuegos.stylesHeight = "400px"
+    divJuegos.stylesHeight = "400px";
     for (let index = 0; index < arregloJuegos.length; index++) {
         const juego = arregloJuegos[index];
         const div = document.createElement("div");
@@ -22,7 +22,7 @@ function cargarDatos(arregloJuegos) {
         const tituloSinEspacios = juego.titulo.replace(/\s/g, '');
         img.src = "/assets/" + tituloSinEspacios + ".png";
         titulo.textContent = juego.titulo;
-        link.href = "juegos/" + tituloSinEspacios.toLowerCase() + ".html";
+        link.href = "game/" + tituloSinEspacios.toLowerCase() + ".html";
     }
 
 }
