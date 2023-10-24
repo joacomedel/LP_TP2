@@ -12,7 +12,7 @@ customElements.define("componen-t", componenT);
 function insertComponentBefore(nameComp, nodeTemp) {
     //Buscamos el elemento dentro de nuestros componentes
     //Lo insertamos luego de nodeTemp y luego borramos nodeTemp
-    fetch('../' + nameComp + '/' + nameComp + '.html')
+    fetch('./' + nameComp + '/' + nameComp + '.html')
         .then(res => res.text())
         .then(
             function (htmlStr) {
@@ -28,10 +28,10 @@ function insertComponentBefore(nameComp, nodeTemp) {
 function loadDependencies(nameComp) {
     const cssLink = document.createElement('link');
     cssLink.rel = 'stylesheet';
-    cssLink.href = '../' + nameComp + '/' + nameComp + '.css';
+    cssLink.href = './' + nameComp + '/' + nameComp + '.css';
     head.appendChild(cssLink);
     const jsScript = document.createElement('script');
-    jsScript.src = '../' + nameComp + '/' + nameComp + '.js'
+    jsScript.src = './' + nameComp + '/' + nameComp + '.js'
     body.appendChild(jsScript);
 }
 /*function insertComponent(nameComp, fath) {
