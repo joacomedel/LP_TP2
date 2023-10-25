@@ -12,6 +12,7 @@ customElements.define("componen-t", componenT);
 function insertComponentBefore(nameComp, nodeTemp) {
     //Buscamos el elemento dentro de nuestros componentes
     //Lo insertamos luego de nodeTemp y luego borramos nodeTemp
+    console.log('./' + nameComp + '/' + nameComp + '.html');
     fetch('./' + nameComp + '/' + nameComp + '.html')
         .then(res => res.text())
         .then(

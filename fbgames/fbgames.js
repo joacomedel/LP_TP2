@@ -20,9 +20,9 @@ function cargarDatos(arregloJuegos) {
         const titulo = document.createElement("h2");
         link.appendChild(titulo);
         const tituloSinEspacios = juego.titulo.replace(/\s/g, '');
-        img.src = "../assets/" + tituloSinEspacios + ".png";
+        img.src = "./assets/" + tituloSinEspacios + ".png";
         titulo.textContent = juego.titulo;
-        link.href = "../game/" + tituloSinEspacios.toLowerCase() + ".html";
+        link.href = "./game/" + tituloSinEspacios.toLowerCase() + ".html";
     }
 
 }
