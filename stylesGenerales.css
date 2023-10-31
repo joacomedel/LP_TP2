@@ -39,6 +39,7 @@ body::before {
     position: absolute;
     top: 0;
     bottom: 0;
+    height: 120%;
     width: 100%;
     position: absolute;
     z-index: -1;

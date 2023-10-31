@@ -5,6 +5,7 @@
     width: 90vw;
     max-width: 1100px;
     margin-top: 50px;
+    border: 4px ridge rgba(0, 0, 0, 0.24);
 }
 
 .questions {
@@ -27,7 +28,7 @@
 }
 
 .questions ul li {
-    width: 100%;
+
     padding-top: 5px;
 }
 
@@ -37,13 +38,13 @@
     cursor: pointer;
     border-style: none;
 
-    background-color: rgba(218, 165, 32, 0.064);
+    background-color: rgba(218, 165, 32, 0.03);
     backdrop-filter: blur(2px);
     border: 4px ridge rgba(0, 0, 0, 0.24);
 }
 
 #buttonSelected {
-    background-color: rgba(218, 165, 32, 0.16);
+    background-color: rgba(218, 165, 32, 0.09);
 }
 
 .answer {
@@ -54,6 +55,8 @@
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
     min-width: 500px;
     border: 4px ridge rgba(0, 0, 0, 0.24);
     backdrop-filter: blur(2px);
