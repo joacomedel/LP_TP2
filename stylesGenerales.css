@@ -29,13 +29,21 @@ body {
     background: var(--colorBackgroundBody);
 }
 
-.textureBG {
-    position: absolute;
+body {
     height: 100%;
-    width: 100%;
-    z-index: -1;
+    position: relative;
+}
+
+body::before {
     background-image: url("./assets/fondo.png");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
     opacity: 0.04;
+    content: "";
 }
 
 .divMain {

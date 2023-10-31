@@ -1,17 +1,16 @@
 .divFaq {
-    color: aqua;
-    background-color: blueviolet;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 90vw;
+    max-width: 1100px;
+    margin-top: 50px;
 }
 
 .questions {
-    background-color: brown;
     flex: 1;
-    min-width: 200px;
-    max-height: 260px;
+    min-width: 230px;
+    max-height: 300px;
 }
 
 .questions ul {
@@ -28,16 +27,27 @@
 }
 
 .questions ul li {
-    margin: 10px;
+    width: 100%;
+    padding-top: 5px;
 }
 
 .questions ul li button {
     border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-style: none;
+
+    background-color: rgba(218, 165, 32, 0.064);
+    backdrop-filter: blur(2px);
+    border: 4px ridge rgba(0, 0, 0, 0.24);
+}
+
+#buttonSelected {
+    background-color: rgba(218, 165, 32, 0.16);
 }
 
 .answer {
-    flex: 4;
-    background-color: yellowgreen;
+    flex: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,12 +55,21 @@
     padding-left: 20px;
     padding-right: 20px;
     min-width: 500px;
+    border: 4px ridge rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(2px);
+    background-color: rgba(218, 165, 32, 0.016);
+    border-radius: 16px;
 }
 
-@media screen and (width < 778px) {
+@media screen and (width < 812px) {
     .questions ul {
         flex-direction: row;
         flex-wrap: wrap;
 
+    }
+
+    .questions ul li {
+        margin: 10px;
+        width: 46%
     }
 }
