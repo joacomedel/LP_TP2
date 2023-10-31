@@ -1,4 +1,56 @@
-.pFac {
+.divFaq {
     color: aqua;
     background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90vw;
+}
+
+.questions {
+    background-color: brown;
+    flex: 1;
+    min-width: 200px;
+    max-height: 260px;
+}
+
+.questions ul {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 10px;
+    max-height: 100%;
+    margin: 0px;
+}
+
+.questions ul li {
+    margin: 10px;
+}
+
+.questions ul li button {
+    border-radius: 10px;
+}
+
+.answer {
+    flex: 4;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 500px;
+}
+
+@media screen and (width < 778px) {
+    .questions ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
 }
