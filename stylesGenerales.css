@@ -6,7 +6,7 @@
     --colorAll: black;
 }*/
 :root {
-    --colorHeader: #361515;
+    --colorHeader: #361515ab;
     --colorLinks: goldenrod;
     --colorBackgroundBody: radial-gradient(#0B0505, #291010);
     --colorLinkHover: #E05858;
